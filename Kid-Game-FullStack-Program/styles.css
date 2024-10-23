@@ -1,0 +1,48 @@
+body {
+    background-color:blanchedalmond
+
+
+    
+}
+
+
+input{
+box-sizing: border-box;
+border: 5px;
+border-radius: 500px solid black;
+}
+
+
+.disable {
+    background-color: gray; /* Gray background */
+    color: white;           /* White text */
+    cursor: not-allowed; 
+    }
+
+
+
+.enable{
+    background-color: lightgreen;
+    color: white;
+
+
+}
+
+.correct{
+border: 2px solid greenyellow;
+
+
+    
+}
+
+.wrong {
+    border: 2px solid red;
+ 
+}
+
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}

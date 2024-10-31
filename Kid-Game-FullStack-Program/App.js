@@ -34,7 +34,20 @@ function DisableBTN(){
     button.classList.remove('enable')
 }
 
+function AllBoxesFilled(){
+    
+    const userinputBOX1 = document.getElementById('InputUser_TXT1').value;
+    const userinputBOX2 = document.getElementById('InputUser_TXT2').value;
+    const userinputBOX3 = document.getElementById('InputUser_TXT3').value;
+    const userinputBOX4 = document.getElementById('InputUser_TXT4').value;
+    
+    
 
+    if(userinputBOX1 != null && userinputBOX2 != null && userinputBOX3 != null && userinputBOX4 != null){
+    
+    DisableBTN();
+    }
+}
 
 
 function CheckAnswer() {

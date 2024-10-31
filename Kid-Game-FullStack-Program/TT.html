@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TEST.css">
+    <title>Kid-Game-TEST</title>
+</head>
+<body>
+
+ <h1>Kid-Game</h1>
+   <!--<button id="randomButton"><span id="randomNumber">0</span></button>  --> 
+    <div class="button-container ButtonsKK">                       
+        <button id="checkanswer">Check Answer</button>
+       <button onclick="generateRandomNumber()">Generate Random Number</button>
+          </div>
+      
+    </div>
+
+
+
+    <div class="container">    
+        <div class="number-box">
+       <span id="randomNumber"></span> <!-- OLD randomDisplay-->
+        </div>
+        <div class="input-box top"> 
+            <input type="number" id="InputUser_TXT1" placeholder="+10" maxlength="3" pattern="^[A-Za-z][0-9]{0,2}$" title="Input must start with a letter followed by up to 2 digits" required>
+        </div>
+        <div class="input-box right">
+            <input type="number" id="InputUser_TXT2" placeholder="+1" maxlength="3" pattern="^[A-Za-z][0-9]{0,2}$" title="Input must start with a letter followed by up to 2 digits">
+        </div>
+        <div class="input-box bottom">
+            <input type="number" id="InputUser_TXT3" placeholder="-10" maxlength="3" pattern="^[A-Za-z][0-9]{0,2}$" title="Input must start with a letter followed by up to 2 digits">
+        </div>
+        <div class="input-box left">
+           <input type="number" id="InputUser_TXT4" placeholder="-1 "maxlength="3" pattern="^[A-Za-z][0-9]{0,2}$" title="Input must start with a letter followed by up to 2 digits">
+        </div>
+
+        <div id="TxtBox1_CorrectAnswer" style="display:none;"></div>
+        <div id="TxtBox2_CorrectAnswer" style="display:none;"></div>
+        <div id="TxtBox3_CorrectAnswer" style="display:none;"></div>
+        <div id="TxtBox4_CorrectAnswer" style="display:none;"></div>
+    </div>
+
+    <script src="test.js"></script>
+      <script> generateRandomNumber();  </script>
+    
+</body>
+</html>

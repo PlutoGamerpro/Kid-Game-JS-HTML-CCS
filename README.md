@@ -72,11 +72,8 @@ function Reset_GameBoxes_And_More() {
     }
 } 
 `
-- Purpose: This function clears all input fields and feedback messages, ensuring a clean state for the next round of guesses.
-
-
 ```
-
+- Purpose: This function clears all input fields and feedback messages, ensuring a clean state for the next round of guesses.
 ---
 
 ## 4.  Enabling and Disabling the Check Answers Button
@@ -231,37 +228,12 @@ setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are fi
 ```
 - Purpose: This code initializes the game when the page loads, generating the first random number and setting up an interval to monitor the input fields.
 
+---
 
-- 📊 ```createNumberTable(randomNumber)```
- ```javascript
-function createNumberTable(randomNumber) {
-    const tableContainer = document.getElementById('table-container');
-    tableContainer.innerHTML = ''; // Clears the previous table
-    const table = document.createElement('table'); // Creates a new table
-    let counter = 1;
 
-    for (let i = 0; i < 10; i++) { // Creates 10 rows
-        const tr = document.createElement('tr');
-        for (let j = 0; j < 10; j++) { // Creates 10 columns
-            const td = document.createElement('td');
-            td.textContent = counter; // Sets the cell's number
-            if (counter === randomNumber) {
-                td.classList.add('highlight'); // Highlights the cell with the random number
-            }
-            tr.appendChild(td);
-            counter++;
-        }
-        table.appendChild(tr);
-    }
 
-    tableContainer.appendChild(table); // Appends the table to the container
-}
-```
-
-   - 📊 Creates a 10x10 table displaying numbers from 1 to 100.
-   - 🟩 Highlights the cell that contains the randomly generated number, making it easy for users to see their target.
  
-  ---
+
 
 ## CSS Code Explanation
 
@@ -297,6 +269,7 @@ body {
 ```
 - Purpose: Centers content vertically and horizontally, sets a dark background color, and applies a white font color for contrast.
 
+---
 
 ## Heading Styling
 ```css
@@ -359,6 +332,8 @@ button {
 
 - Purpose: Styles the input boxes and buttons, ensuring they are visually distinct and user-friendly.
 
+---
+
 ##  Highlighting Correct and Wrong Answers
 ```css
 .correct {
@@ -373,7 +348,7 @@ button {
 
 ---
 
-    ## 📊 Taloversigt
+## 📊 Taloversigt
 
 ## - 🎲  Random Number picked is: $${\color{lightgreen}{42}}$$
 

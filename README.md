@@ -12,11 +12,14 @@
 - ⚡ Provides immediate feedback on user inputs (correct or incorrect).
 - 🔄 Allows users to generate a new random number and reset the game.
 
+---
+
 # 💻  Technologies Used
 - HTML: Structure of the web page.
 - CSS: Styling for the game elements.
 - JavaScript: Game logic and interactivity.
 
+---
 
 # 📜 Code Explanation
 - 🏗️ HTML Structure

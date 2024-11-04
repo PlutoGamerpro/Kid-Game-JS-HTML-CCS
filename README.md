@@ -2,4 +2,4 @@
 
 
 
-![Diagram Description](images/KIDGAME.png)
+![Diagram Description](images/UI-HTMLGAME.png)

@@ -6,28 +6,9 @@
 ![Diagram Description](images/UI-HTMLGAME.png)
 
 
-## 🧩 Methods
-
-### 🔄 Game Management
-1. 🔄 [generateRandomNumber](#generaterandomnumber)
-2. 🔄 [Reset_GameBoxes_And_More](#3-reset_gameboxes_and_more)
-3. 🔄 [createNumberTable](#createnumbertable)
-4. 🔄 [AllBoxesFilled](#allboxesfilled)
-
-### ✏️ User Interaction Handling
-1. 🖱️ [EnableBTN](#enablebtn)
-2. ✅ [DisableBTN](#disablebtn)
-3. ✔️ [Check User Answers](#checking-user-answers)
-
-### 🎨 Feedback and Display Management
-1. 🎨 [Highlight Correct and Wrong Answers](#highlighting-correct-and-wrong-answers)
-2. 🌟 [Update Display for Correct Answers](#update-display-for-correct-answers)
-
-### ⏰ Input Management  
-1. 📋 [Input Handling](#input-handling)
-2. 🔄 [Enable/Disable Check Answers Button](#enabling-and-disabling-the-check-answers-button)
 
 
+<!--  on a time make a indsholdsforegnelse /índice   -->
 
 
 # 🚀 Features

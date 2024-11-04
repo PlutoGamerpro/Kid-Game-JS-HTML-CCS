@@ -67,7 +67,7 @@
 
 # 🎲 Functions
 - 🎲 ```generateRandomNumber()```
-##  2. Generating a Random Number
+## Generating a Random Number
  ```javascript
 function generateRandomNumber() {
     randomNumber = Math.floor(Math.random() * 100) + 1; // Generates a random number between 1 and 100

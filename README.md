@@ -3,7 +3,7 @@
 - This project is a simple number guessing game built with HTML, CSS, and JavaScript. Users are challenged to guess numbers based on a randomly generated number displayed in a grid. The game includes input validation and visual feedback to enhance the user experience
 
 
-![Diagram Description](images/UI-HTMLGAME.png)
+![Diagram Description](images/BØRNESPIL1.png)
 
 
 

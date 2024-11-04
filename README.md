@@ -26,7 +26,7 @@
 
 ---
 
-1. Global Variables:
+## 1. Global Variables:
  -  let randomNumber;: Holds the random number generated for the game.
 ```javascript
   let randomNumber;
@@ -39,7 +39,7 @@
 
 # 🎲 Functions
 - 🎲 ```generateRandomNumber()```
- 2. Generating a Random Number
+##  2. Generating a Random Number
  ```javascript
 function generateRandomNumber() {
     randomNumber = Math.floor(Math.random() * 100) + 1; // Generates a random number between 1 and 100
@@ -58,7 +58,7 @@ function generateRandomNumber() {
 
 ---
 
-3. Resetting Game Boxes and Feedback
+## 3. Resetting Game Boxes and Feedback
 ```javascript
 function Reset_GameBoxes_And_More() {
     for (let i = 1; i <= 4; i++) {
@@ -76,7 +76,7 @@ function Reset_GameBoxes_And_More() {
 
 ---
 
-4.  Enabling and Disabling the Check Answers Button
+## 4.  Enabling and Disabling the Check Answers Button
 ```javascript
 function Reset_GameBoxes_And_More() {
     for (let i = 1; i <= 4; i++) {
@@ -95,7 +95,7 @@ function Reset_GameBoxes_And_More() {
 
 ---
 
-  5. Enabling and Disabling the Check Answers Button
+##  5. Enabling and Disabling the Check Answers Button
  ```javascript 
 function EnableBTN() {
     const button = document.getElementById('checkanswer');
@@ -113,9 +113,9 @@ function DisableBTN() {
 ```
 - Purpose: These functions control the state of the "Check Answers" button, enabling or disabling it based on user input.
 
+---
 
-
-  6. Checking if All Input Boxes are Filled
+##  6. Checking if All Input Boxes are Filled
  ```javascript 
 function AllBoxesFilled() {
     const allFilled = [...Array(4).keys()].every(i => document.getElementById(`InputUser_TXT${i + 1}`).value.trim() !== "");
@@ -123,9 +123,14 @@ function AllBoxesFilled() {
 }
 
 ```
+
 - Purpose: This function checks whether all input fields have been filled. If they are, it enables the button; if not, it keeps it disabled.
 
----
+  -   ✅ Checks if all four input fields are filled.
+  -   🎛️ Updates the state of the "Check Answers" button accordingly, enabling it only when all fields have values.
+
+
+
 
  ```javascript 
 function EnableBTN() {
@@ -150,11 +155,9 @@ function DisableBTN() {
  
 ---
 
-- ```AllBoxesFilled()```:
-   -   ✅ Checks if all four input fields are filled.
-   -   🎛️ Updates the state of the "Check Answers" button accordingly, enabling it only when all fields have values.
+ 
 
--  7. Checking User Answers
+##  7. Checking User Answers
  ```javascript
 document.getElementById("checkanswer").addEventListener("click", function() {
     const correctAnswers = [
@@ -188,7 +191,7 @@ document.getElementById("checkanswer").addEventListener("click", function() {
   - 🎉 Provides visual feedback (green for correct, red for incorrect) by adding or removing classes based on the user's input.
 
 
-  8. Creating the Number Table
+##  8. Creating the Number Table
  ```javascript
 function createNumberTable(randomNumber) {
     const tableContainer = document.getElementById('table-container');
@@ -218,7 +221,7 @@ function createNumberTable(randomNumber) {
 
 ---
 
-9. Initializing the Game
+## 9. Initializing the Game
  ```javascript
 generateRandomNumber(); // Starts the game by generating a random number
 setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are filled

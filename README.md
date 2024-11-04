@@ -9,8 +9,8 @@
 ## 🧩 Methods
 
 ### 🔄 Game Management
-1. 🔄 [generateRandomNumber](#generaterandomnumber)
-2. 🔄 [Reset_GameBoxes_And_More](#reset_gameboxes_and_more)
+1. 🔄 [generateRandomNumber](#2-generaterandomnumber)
+2. 🔄 [Reset_GameBoxes_And_More](#3-reset_gameboxes_and_more)
 3. 🔄 [createNumberTable](#createnumbertable)
 4. 🔄 [AllBoxesFilled](#allboxesfilled)
 

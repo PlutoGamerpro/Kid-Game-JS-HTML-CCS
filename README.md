@@ -184,12 +184,12 @@ document.getElementById("checkanswer").addEventListener("click", function() {
 ```
 -  Purpose: This event listener checks user inputs against the correct answers when the button is clicked. It provides feedback on whether each guess was correct or wrong and updates the display accordingly.
 
----
 
 - ✔️ ```checkAnswers()```:
   - ✔️ Compares the user's inputs against the correct answers derived from the random number.
   - 🎉 Provides visual feedback (green for correct, red for incorrect) by adding or removing classes based on the user's input.
 
+---
 
 ##  8. Creating the Number Table
  ```javascript

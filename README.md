@@ -54,13 +54,16 @@
    - 🟩 Highlights the cell that contains the randomly generated number, making it easy for users to see their target.
     
 
-  
-
-
-
 # 🛠️ Usage
 -  To start the game, open the index.html file in a web browser.
   - 🔄  Click on "Generate New Number" to create a new random number and display it in the grid.
   - ✍️ Enter your guesses in the input fields.
   - ✔️ Click "Check Answers" to see which guesses are correct.
   - 🔄 The game can be reset by generating a new random number.
+
+## 🙌 Tak for din tid!
+
+Jeg håber, du fandt denne gennemgang nyttig! Hvis du er interesseret i at se flere af mine projekter, kan du tjekke dem ud [here](https://github.com/PlutoGamerpro?tab=stars).
+
+
+

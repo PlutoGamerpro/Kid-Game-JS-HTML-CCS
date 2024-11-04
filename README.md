@@ -230,8 +230,145 @@ setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are fi
 
 
 - 📊 ```createNumberTable(randomNumber)```
+ ```javascript
+function createNumberTable(randomNumber) {
+    const tableContainer = document.getElementById('table-container');
+    tableContainer.innerHTML = ''; // Clears the previous table
+    const table = document.createElement('table'); // Creates a new table
+    let counter = 1;
+
+    for (let i = 0; i < 10; i++) { // Creates 10 rows
+        const tr = document.createElement('tr');
+        for (let j = 0; j < 10; j++) { // Creates 10 columns
+            const td = document.createElement('td');
+            td.textContent = counter; // Sets the cell's number
+            if (counter === randomNumber) {
+                td.classList.add('highlight'); // Highlights the cell with the random number
+            }
+            tr.appendChild(td);
+            counter++;
+        }
+        table.appendChild(tr);
+    }
+
+    tableContainer.appendChild(table); // Appends the table to the container
+}
+```
+
    - 📊 Creates a 10x10 table displaying numbers from 1 to 100.
    - 🟩 Highlights the cell that contains the randomly generated number, making it easy for users to see their target.
+ 
+  ---
+
+## CSS Code Explanation
+
+## 1. Resetting Default Styles
+
+```css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+```
+- Purpose: Resets margin and padding for all elements to create a consistent look across browsers and sets the box model to include padding and border in the element's total width and height.
+
+---
+
+## Body Styling
+
+```css
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4b4545; // Dark background
+    color: white; // White text
+    font-family: Arial, sans-serif; // Font family
+}
+
+```
+- Purpose: Centers content vertically and horizontally, sets a dark background color, and applies a white font color for contrast.
+
+
+## Heading Styling
+```css
+h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: #fff;
+    height: 50px;
+}
+```
+
+- Purpose: Styles the main heading, adjusting the size and color for visibility.
+
+---
+
+## Table Styling
+
+```css
+.table-container TABLE table {
+    width: 50%;
+    border-collapse: collapse; // Merges borders
+}
+
+td {
+    border: 2px solid #fff; // White border for cells
+    padding: 15px; // Cell padding
+    text-align: center; // Center text
+    background-color: #333; // Dark cell background
+    color: #fff; // White text in cells
+}
+
+```
+
+- Purpose: Styles the table and its cells, ensuring a cohesive look with borders, padding, and background colors.
+
+
+--- 
+
+
+## Input Box and Button Styling
+```css
+.input-box {
+    border: 6px solid black; // Black border
+    position: absolute;
+    width: 110px; // Fixed width
+    height: 110px; // Fixed height
+    background-color: white; // White background
+    color: black; // Black text
+    font-size: 50px; // Large font size
+}
+
+button {
+    width: 200px; // Fixed width
+    height: 50px; // Fixed height
+    border-radius: 5px; // Rounded corners
+    background-color: white; // Button background color
+}
+
+```
+
+- Purpose: Styles the input boxes and buttons, ensuring they are visually distinct and user-friendly.
+
+##  Highlighting Correct and Wrong Answers
+```css
+.correct {
+    border: 6px solid greenyellow; // Green border for correct answers
+}
+
+.wrong {
+    border: 6px solid red; // Red border for wrong answers
+}
+```
+-  Purpose: Visually indicates whether user inputs are correct or incorrect through colored borders.
+
+---
 
     ## 📊 Taloversigt
 

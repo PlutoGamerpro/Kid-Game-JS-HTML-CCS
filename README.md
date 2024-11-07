@@ -177,7 +177,7 @@ function DisableBTN() {
    - 🔒 DisableBTN(): Disables the button, preventing submission until all input fields are filled.
  
 ---
-# 6 HIGHSCORE
+## 6. HIGHSCORE
  ```javascript 
  function HIGHSCORE(){
     console.log("OLD HIGHSCORE " + Highscore);
@@ -186,10 +186,104 @@ function DisableBTN() {
     document.getElementById('highscore').textContent = Highscore
 }
 ```
+- Purpose:
 
- 
+  ---
 
-##  7. Checking User Answers
+## 7. FindCorrectAnswer
+ ```javascript 
+function FindCorrectAnswer() {
+     let correctAnswers = [];
+     if (currentLevel === 'easy') {
+         correctAnswers = [
+             randomNumber + 10,
+             randomNumber + 1,
+             randomNumber - 10,
+             randomNumber - 1
+         ];
+     } else if (currentLevel === 'medium') {
+         correctAnswers = [
+             randomNumber + 20,
+             randomNumber + 5,
+             randomNumber - 20,
+             randomNumber - 5
+         ];
+     } else if (currentLevel === 'hard') {
+         correctAnswers = [
+             randomNumber + 50,
+             randomNumber + 10,
+             randomNumber - 50,
+             randomNumber - 10
+         ];
+     }
+
+     return correctAnswers;
+ }
+ ```
+
+- Purpose: 
+
+---
+## 8. ResetTimer
+
+ ```javascript 
+' function resetTimer() {
+     clearInterval(interval);
+     interval = setInterval(function () {
+         if (countdown <= 0) {
+             clearInterval(interval);
+             document.getElementById('Time').textContent = "0";
+             disableinputfield();
+             EnableBTN();
+             
+          //   alert("Game Over! Time's up!");
+         
+         } else {
+             document.getElementById('Time').textContent = countdown;
+             countdown--;
+
+         }
+     }, 1000);
+ }
+
+
+ ```
+
+- Purpose:
+
+---
+
+## 9. Window.onload
+
+ ```javascript 
+
+ window.onload = () => {
+     setLevel('easy');  // Default level to 'easy'
+
+ };
+ ```
+- Purpose:
+
+---
+
+## 10. ColorButtons
+ ```javascript 
+ function ColorButtons(){
+    var button = document.getElementById("hardButton");
+button.classList.add("Hard");
+
+var button =  document.getElementById("mediumButton");
+button.classList.add("Medium")
+
+var button = document.getElementById("easyButton");
+button.classList.add("Easy")
+}
+ ```
+- Purpose:
+
+---
+
+##  11. Checking User Answers
  ```javascript
  document.getElementById("checkanswer").addEventListener("click", function () {
      const correctAnswers = FindCorrectAnswer(); // Get the correct answers for the current level
@@ -233,7 +327,7 @@ function DisableBTN() {
 
 ---
 
-##  8. Creating the Number Table
+##  12. Creating the Number Table
  ```javascript
 function createNumberTable(randomNumber) {
     const tableContainer = document.getElementById('table-container');
@@ -263,7 +357,7 @@ function createNumberTable(randomNumber) {
 
 ---
 
-## 9. Initializing the Game
+## 13. Initializing the Game
  ```javascript
 generateRandomNumber(); // Starts the game by generating a random number
 setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are filled
@@ -272,9 +366,17 @@ setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are fi
 
 ---
 
+# 14 Calling Methods in js
+ ```javascript
+ generateRandomNumber();
+setInterval(AllBoxesFilled, 0);
+updatePlaceholders();  // Set initial placeholders on page load
 
+ ```
 
- 
+- Purpose: 
+
+---
 
 
 ## CSS Code Explanation

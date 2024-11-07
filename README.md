@@ -390,12 +390,13 @@ button {
 }
 ```
 - ```.disable```: Styles active elements with a gray background and white text.
+```css
 .disable {
     background-color: gray;
     color: white;
     cursor: not-allowed;
 }
-
+```
 
   
   ```.top```: Positions the element at the top center.

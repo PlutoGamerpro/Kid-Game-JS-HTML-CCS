@@ -221,7 +221,7 @@ function FindCorrectAnswer() {
  }
  ```
 
-- Purpose: 
+- Purpose: The  ```FindCorrectAnswer ``` function generates an array of possible correct answers based on the current difficulty level ( ```easy ```,  ```medium ```,  ```hard ```), adjusting a base number ( ```randomNumber ```) with different values for each level.
 
 ---
 ## 8. ResetTimer
@@ -249,7 +249,7 @@ function FindCorrectAnswer() {
 
  ```
 
-- Purpose:
+- Purpose: The  ```resetTimer ``` function resets and starts a countdown timer. It updates the displayed time every second and stops when the timer reaches zero, disabling input and enabling a button.
 
 ---
 
@@ -262,7 +262,7 @@ function FindCorrectAnswer() {
 
  };
  ```
-- Purpose:
+- Purpose: The  ```window.onload ``` function sets the default game difficulty to 'easy' when the page finishes loading.
 
 ---
 
@@ -279,7 +279,7 @@ var button = document.getElementById("easyButton");
 button.classList.add("Easy")
 }
  ```
-- Purpose:
+- Purpose: The  ```ColorButtons ``` function adds specific CSS classes ( ```Hard, ```  ```Medium, ```  ```Easy ```) to the buttons for different difficulty levels ( ```hardButton ```,  ```mediumButton ```,  ```easyButton ```), likely to style them according to their difficulty.
 
 ---
 

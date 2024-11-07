@@ -6,8 +6,6 @@
 ![Diagram Description](images/GAMEKIDGAME1.png)
 
 
-
-
 <!--  on a time make a indsholdsforegnelse /índice   -->
 
 
@@ -287,7 +285,7 @@ setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are fi
 
 ---
 
-## Body Styling
+## 2. Body Styling
 
 ```css
 body {
@@ -306,7 +304,7 @@ body {
 
 ---
 
-## Heading Styling
+## 3. Heading Styling
 ```css
 h1 {
     margin-bottom: 20px;
@@ -323,7 +321,7 @@ h1 {
 
 ---
 
-## Table Styling
+## 4. Table Styling
 
 ```css
 .table-container table  {
@@ -348,7 +346,7 @@ td {
 --- 
 
 
-## Input Box and Button Styling
+## 5. Input Box and Button Styling
 ```css
 .input-box {
     width: 130px; /* Match number box width */
@@ -381,7 +379,7 @@ button {
 
 ---
 
-## Custom Input Box Positioning and Styling
+## 6. Custom Input Box Positioning and Styling
 - ```.enable```: Styles active elements with a limegreen background and white text.
 ```css
 .enable {
@@ -437,7 +435,7 @@ button {
 ---
 
 
-##  Highlighting Correct and Wrong Answers
+## 7.  Highlighting Correct and Wrong Answers
 ```css
 .correct {
     border: 6px solid greenyellow; // Green border for correct answers

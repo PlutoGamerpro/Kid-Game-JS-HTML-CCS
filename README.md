@@ -366,7 +366,7 @@ setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are fi
 
 ---
 
-# 14 Calling Methods in js
+# 14. Calling Methods in js
  ```javascript
  generateRandomNumber();
 setInterval(AllBoxesFilled, 0);
@@ -380,7 +380,9 @@ updatePlaceholders();  // Set initial placeholders on page load
 
 
 
-## 1 HTML Document Setup
+## 0. HTML Document Setup
+
+## 1. Body
 -  ```<!DOCTYPE html> ```: Declares the document type as HTML5, ensuring modern HTML syntax and behavior.
 -  ```<html lang="en"> ```: Defines the document language as English ( ```lang="en" ```), which helps with accessibility and search engine optimization.
 
@@ -390,7 +392,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 <!DOCTYPE html>
 <html lang="en">
  ```
-## 2 Head Section
+## 2. Head Section
 - The <head> section contains meta-information about the document, links to external resources, and sets up the document's character encoding and viewport.
   
     -  ``` <meta charset="UTF-8"> ```: Defines the character encoding as UTF-8 to support various characters and symbols.
@@ -411,7 +413,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 ## Step-by-Step Breakdown of the HTML Code
 
 
-## 3 Body
+## 3.0 Body
 
 - The  ```<body> ``` section contains the visible content of the page. This is where most of the game’s interactive elements and displays are located
 

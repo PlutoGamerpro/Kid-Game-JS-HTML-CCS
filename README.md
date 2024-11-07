@@ -408,6 +408,9 @@ updatePlaceholders();  // Set initial placeholders on page load
  ```
 --- 
 
+## Step-by-Step Breakdown of the HTML Code
+
+
 ## 3 Body
 
 - The  ```<body> ``` section contains the visible content of the page. This is where most of the game’s interactive elements and displays are located

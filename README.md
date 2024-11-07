@@ -51,12 +51,18 @@
 ## Generating a Random Number
  ```javascript
 function generateRandomNumber() {
-    randomNumber = Math.floor(Math.random() * 100) + 1; // Generates a random number between 1 and 100
-    document.getElementById('randomNumber').textContent = randomNumber; // Displays the generated number
-    createNumberTable(randomNumber); // Creates and displays the number grid
-    Reset_GameBoxes_And_More(); // Resets input fields and feedback
-    DisableBTN(); // Disables the "Check Answers" button until inputs are filled
-}
+    enableinputfileds();
+    ColorButtons()
+     // Reset inputs and game state
+     Reset_GameBoxes_And_More();
+     DisableBTN();
+     correctCount = 0;
+     checkPressed = false;
+
+     randomNumber = Math.floor(Math.random() * 100) + 1;
+     document.getElementById('randomNumber').textContent = randomNumber;
+     createNumberTable(randomNumber);
+ }
    ```
 - Purpose: This function generates a new random number, displays it on the screen, creates a number grid, resets any previous game state, and ensures the "Check Answers" button is disabled until the user fills in their guesses.
   
@@ -123,11 +129,24 @@ function DisableBTN() {
 
 ##  6. Checking if All Input Boxes are Filled
  ```javascript 
-function AllBoxesFilled() {
-    const allFilled = [...Array(4).keys()].every(i => document.getElementById(`InputUser_TXT${i + 1}`).value.trim() !== "");
-    allFilled ? EnableBTN() : DisableBTN(); // Enables the button if all inputs are filled, otherwise disables it
-}
+ function AllBoxesFilled() {
+     const allFilled = [...Array(4).keys()].every(i => {
+         const inputValue = document.getElementById(`InputUser_TXT${i + 1}`).value.trim();
+         return inputValue !== "";  // Check if input is not empty
+     });
 
+     if (allFilled) {
+         EnableBTN();  // Enable button when all input fields are filled
+         
+     } else {
+         DisableBTN();  // Disable button if any input field is empty
+     }
+ }
+
+ // Add event listeners for input fields to check if all are filled
+ document.querySelectorAll('.input-box input').forEach(inputField => {
+     inputField.addEventListener('input', AllBoxesFilled);  // Call AllBoxesFilled every time an input changes
+ });
 ```
 
 - Purpose: This function checks whether all input fields have been filled. If they are, it enables the button; if not, it keeps it disabled.
@@ -165,28 +184,38 @@ function DisableBTN() {
 
 ##  7. Checking User Answers
  ```javascript
-document.getElementById("checkanswer").addEventListener("click", function() {
-    const correctAnswers = [
-        randomNumber + 10,
-        randomNumber + 1,
-        randomNumber - 10,
-        randomNumber - 1
-    ]; // Array of correct answers based on the random number
+ document.getElementById("checkanswer").addEventListener("click", function () {
+     const correctAnswers = FindCorrectAnswer(); // Get the correct answers for the current level
 
-    correctAnswers.forEach((answer, index) => {
-        const input = document.getElementById(`InputUser_TXT${index + 1}`).value.trim(); // User's input
-        const parentBox = document.querySelectorAll('.input-box')[index];
+     correctAnswers.forEach((answer, index) => {
+         const input = document.getElementById(`InputUser_TXT${index + 1}`).value.trim();
+         const parentBox = document.querySelectorAll('.input-box')[index];
 
-        if (parseInt(input) === answer) {
-            parentBox.classList.add('correct'); // Adds correct class if the answer matches
-            parentBox.classList.remove('wrong');
-            document.getElementById(`TxtBox${index + 1}_CorrectAnswer`).textContent = answer; // Displays correct answer
-        } else {
-            parentBox.classList.add('wrong'); // Adds wrong class if the answer does not match
-            parentBox.classList.remove('correct');
-        }
-    });
-});
+         if (parseInt(input) === answer) {
+             parentBox.classList.add('correct');
+             parentBox.classList.remove('wrong');
+             document.getElementById(`TxtBox${index + 1}_CorrectAnswer`).textContent = answer;
+             correctCount++; // Increment the counter if the answer is correct
+         } else {
+             parentBox.classList.add('wrong');
+             parentBox.classList.remove('correct');
+         }
+     });
+
+     // Check if all answers are correct
+     if (correctCount === 4) {
+         Highscore++;
+         document.getElementById('highscore').textContent = Highscore;
+         checkPressed = true;
+         document.getElementById("checkanswer").disabled = true;
+         HIGHSCORE();
+         clearInterval(interval);
+     } else {
+       
+         checkPressed = false;
+              
+     }
+ });
 ```
 -  Purpose: This event listener checks user inputs against the correct answers when the button is clicked. It provides feedback on whether each guess was correct or wrong and updates the display accordingly.
 
@@ -280,10 +309,13 @@ body {
 ## Heading Styling
 ```css
 h1 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 36px;
     color: #fff;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 ```
 
@@ -294,17 +326,18 @@ h1 {
 ## Table Styling
 
 ```css
-.table-container TABLE table {
-    width: 50%;
-    border-collapse: collapse; // Merges borders
+.table-container table  {
+    width: 40%;
+    border-collapse: collapse;
 }
 
 td {
-    border: 2px solid #fff; // White border for cells
-    padding: 15px; // Cell padding
-    text-align: center; // Center text
-    background-color: #333; // Dark cell background
-    color: #fff; // White text in cells
+    border: 2px solid #fff;
+    padding: 15px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
 }
 
 ```
@@ -318,20 +351,28 @@ td {
 ## Input Box and Button Styling
 ```css
 .input-box {
-    border: 6px solid black; // Black border
+    width: 130px; /* Match number box width */
+    height: 130px; /* Match number box height */
+    background-color: #ffffff; /* White background */
+    border: 6px solid #222; /* Dark border */
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    width: 110px; // Fixed width
-    height: 110px; // Fixed height
-    background-color: white; // White background
-    color: black; // Black text
-    font-size: 50px; // Large font size
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
 }
 
 button {
-    width: 200px; // Fixed width
-    height: 50px; // Fixed height
-    border-radius: 5px; // Rounded corners
-    background-color: white; // Button background color
+     width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #28a745; /* Green background */
+    color: white;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 ```

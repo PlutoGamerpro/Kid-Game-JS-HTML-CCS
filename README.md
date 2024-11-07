@@ -33,7 +33,7 @@
 
 ---
 
-## 1. Global Variables:
+## 0. Global Variables:
  -  let randomNumber;: Holds the random number generated for the game.
 ```javascript
   let randomNumber;
@@ -46,7 +46,7 @@
 
 # 🎲 Functions
 - 🎲 ```generateRandomNumber()```
-## Generating a Random Number
+## 1. Generating a Random Number
  ```javascript
 function generateRandomNumber() {
     enableinputfileds();
@@ -71,7 +71,7 @@ function generateRandomNumber() {
 
 ---
 
-## 3. Resetting Game Boxes and Feedback
+## 2. Resetting Game Boxes and Feedback
 ```javascript
 function Reset_GameBoxes_And_More() {
     for (let i = 1; i <= 4; i++) {
@@ -86,7 +86,7 @@ function Reset_GameBoxes_And_More() {
 - Purpose: This function clears all input fields and feedback messages, ensuring a clean state for the next round of guesses.
 ---
 
-## 4.  Enabling and Disabling the Check Answers Button
+## 3.  Enabling and Disabling the Check Answers Button
 ```javascript
 function Reset_GameBoxes_And_More() {
     for (let i = 1; i <= 4; i++) {
@@ -105,7 +105,7 @@ function Reset_GameBoxes_And_More() {
 
 ---
 
-##  5. Enabling and Disabling the Check Answers Button
+##  4. Enabling and Disabling the Check Answers Button
  ```javascript 
 function EnableBTN() {
     const button = document.getElementById('checkanswer');
@@ -125,7 +125,7 @@ function DisableBTN() {
 
 ---
 
-##  6. Checking if All Input Boxes are Filled
+##  5. Checking if All Input Boxes are Filled
  ```javascript 
  function AllBoxesFilled() {
      const allFilled = [...Array(4).keys()].every(i => {
@@ -177,6 +177,15 @@ function DisableBTN() {
    - 🔒 DisableBTN(): Disables the button, preventing submission until all input fields are filled.
  
 ---
+# 6 HIGHSCORE
+ ```javascript 
+ function HIGHSCORE(){
+    console.log("OLD HIGHSCORE " + Highscore);
+   
+    console.log("HAS ++++ HIGHWITH ONE NEW " +  Highscore)
+    document.getElementById('highscore').textContent = Highscore
+}
+```
 
  
 

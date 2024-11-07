@@ -390,6 +390,12 @@ button {
 .wrong {
     border: 6px solid red; // Red border for wrong answers
 }
+
+.highlight {
+    color: rgb(0, 248, 0);
+    font-weight: bold;
+}
+
 ```
 -  Purpose: Visually indicates whether user inputs are correct or incorrect through colored borders.
 

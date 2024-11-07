@@ -374,7 +374,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 
  ```
 
-- Purpose: 
+- Purpose:  The code calls three functions to initialize and manage the game: generate a random number, check if all boxes are filled repeatedly, and set the initial placeholders on page load.
 
 ---
 

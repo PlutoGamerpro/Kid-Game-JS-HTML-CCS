@@ -399,7 +399,7 @@ button {
 ```
 
   
-  ```.top```: Positions the element at the top center.
+  - ```.top```: Positions the element at the top center.
 ```css
 .top {
     top: -60px;
@@ -407,7 +407,7 @@ button {
     transform: translateX(-50%);
 }
 ```
- ```.right```: Positions the element at the right center.
+ - ```.right```: Positions the element at the right center.
 ```css
 .right {
     top: 50%;
@@ -415,7 +415,7 @@ button {
     transform: translateY(-50%);
 }
 ```
- ```.bottom```: Positions the element at the bottom center.
+-  ```.bottom```: Positions the element at the bottom center.
 ```css
 .bottom {
     bottom: -70px;
@@ -423,7 +423,7 @@ button {
     transform: translateX(-50%);
 }
 ```
- ```.left```: Positions the element at the left center
+ - ```.left```: Positions the element at the left center
  ```css
 .left {
     top: 50%;

@@ -381,6 +381,53 @@ button {
 
 ---
 
+## Custom Input Box Positioning and Styling
+- ```.enable```: Styles active elements with a limegreen background and white text.
+```css
+.enable {
+    background-color: limegreen;
+    color: white;
+}
+```
+  
+  ```.top```: Positions the element at the top center.
+```css
+.top {
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+```
+ ```.right```: Positions the element at the right center.
+```css
+.right {
+    top: 50%;
+    right: -90px;
+    transform: translateY(-50%);
+}
+```
+ ```.bottom```: Positions the element at the bottom center.
+```css
+.bottom {
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+```
+ ```.left```: Positions the element at the left center
+ ```css
+.left {
+    top: 50%;
+    left: -90px;
+    transform: translateY(-50%);
+}
+```
+
+- These styles are ideal for positioning input boxes or other elements at distinct locations around a parent container, while keeping them centered at each edge.
+
+---
+
+
 ##  Highlighting Correct and Wrong Answers
 ```css
 .correct {

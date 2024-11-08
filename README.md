@@ -563,7 +563,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 ```
 ## CSS Code Explanation
 
-## 1. Resetting Default Styles
+## 3.0 Resetting Default Styles
 
 ```css
 
@@ -578,7 +578,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 
 ---
 
-## 2. Body Styling
+## 3.1 Body Styling
 
 ```css
 body {
@@ -597,7 +597,7 @@ body {
 
 ---
 
-## 3. Heading Styling
+## 3.2 Heading Styling
 ```css
 h1 {
     margin-bottom: 20px;
@@ -614,7 +614,7 @@ h1 {
 
 ---
 
-## 4. Table Styling
+## 3.3 Table Styling
 
 ```css
 .table-container table  {
@@ -639,7 +639,7 @@ td {
 --- 
 
 
-## 5. Input Box and Button Styling
+## 3.4 Input Box and Button Styling
 ```css
 .input-box {
     width: 130px; /* Match number box width */
@@ -672,7 +672,7 @@ button {
 
 ---
 
-## 6. Custom Input Box Positioning and Styling
+## 3.5 Custom Input Box Positioning and Styling
 - ```.enable```: Styles active elements with a limegreen background and white text.
 ```css
 .enable {
@@ -728,7 +728,7 @@ button {
 ---
 
 
-## 7. Highlighting Correct and Wrong Answers
+## 3.6 Highlighting Correct and Wrong Answers
 ```css
 .correct {
     border: 6px solid greenyellow; // Green border for correct answers

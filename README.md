@@ -12,7 +12,7 @@
 ## Table of Contents
 
 1. [JavaScript Code Explanation 🖥️](#javascript-code-explanation)
-   - [🌐 1.0 Global Variables](#10-global-variables)
+   - [🌐 1.0 Global Variables](#10-global-variables-#)
    - [🔢 1.1 Generating a Random Number](#11-generating-a-random-number)
    - [🔄 1.2 Resetting Game Boxes and Feedback](#12-resetting-game-boxes-and-feedback)
    - [⏯️ 1.3 Enabling and Disabling the Check Answers Button](#13-enabling-and-disabling-the-check-answers-button) 
@@ -80,17 +80,14 @@
 
 ---
 
-# 📜 Code Explanation
-- 🏗️ HTML Structure
-    - The HTML file contains a div to hold the number grid, buttons for user interaction, and input fields for user guesses. The table for displaying numbers and the feedback elements for user inputs are created dynamically using JavaScript.
 
-## JavaScript Code Explanation
+# JavaScript Code Explanation
 
-- 🧠 JavaScript Logic
+
 
 ---
 
-## 1.0 Global Variables
+## 1.0 Global Variables 🌐
  -  let randomNumber;: Holds the random number generated for the game.
 ```javascript
   let randomNumber;

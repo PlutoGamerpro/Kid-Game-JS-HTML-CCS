@@ -5,6 +5,49 @@
 
 ![Diagram Description](images/GAMEKIDGAME1.png)
 
+# Kid-Game Documentation
+
+## Table of Contents
+## Table of Contents
+1. [JavaScript Code Explanation](#javascript-code-explanation)
+   - [1. Generating Random Numbers](#1-generating-random-numbers)
+   - [2. Resetting Game Boxes and Feedback](#2-resetting-game-boxes-and-feedback)
+   - [3. Enabling and Disabling the Check Answers Button](#3-enabling-and-disabling-the-check-answers-button)
+   - [4. Checking if All Input Boxes are Filled](#4-checking-if-all-input-boxes-are-filled)
+   - [5. Highscore Management](#5-highscore-management)
+   - [6. Finding Correct Answers](#6-finding-correct-answers)
+   - [7. Resetting Timer](#7-resetting-timer)
+   - [8. Window onload Initialization](#8-window-onload-initialization)
+   - [9. Color Buttons Based on Difficulty](#9-color-buttons-based-on-difficulty)
+   - [10. Checking User Answers](#10-checking-user-answers)
+   - [11. Creating the Number Table](#11-creating-the-number-table)
+   - [12. Initializing the Game](#12-initializing-the-game)
+2. [Step-by-Step Breakdown of the HTML Code](#step-by-step-breakdown-of-the-html-code)
+   - [3.0 Body](#30-body)
+   - [3.1 Game Title](#31-game-title)
+   - [3.2 Highscore and Timer Display](#32-highscore-and-timer-display)
+   - [3.3 Difficulty Level Buttons](#33-difficulty-level-buttons)
+   - [3.4 Check Answer Button](#34-check-answer-button)
+   - [3.5 Dynamic Table Container](#35-dynamic-table-container)
+   - [3.6 Random Number Display](#36-random-number-display)
+   - [3.7 Answer Input Fields](#37-answer-input-fields)
+   - [3.8 Hidden Divs for Correct Answers](#38-hidden-divs-for-correct-answers)
+   - [3.9 Linking External JavaScript Files](#39-linking-external-javascript-files)
+   - [3.10 Generating a Random Number on Page Load](#310-generating-a-random-number-on-page-load)
+3. [CSS Code Explanation](#css-code-explanation)
+   - [1. Resetting Default Styles](#1-resetting-default-styles)
+   - [2. Body Styling](#2-body-styling)
+   - [3. Heading Styling](#3-heading-styling)
+   - [4. Table Styling](#4-table-styling)
+   - [5. Input Box and Button Styling](#5-input-box-and-button-styling)
+   - [6. Custom Input Box Positioning and Styling](#6-custom-input-box-positioning-and-styling)
+   - [7. Highlighting Correct and Wrong Answers](#7-highlighting-correct-and-wrong-answers)
+
+  
+    
+4. [Conclusion](#conclusion)
+
+
 
 <!--  on a time make a indsholdsforegnelse /índice   -->
 

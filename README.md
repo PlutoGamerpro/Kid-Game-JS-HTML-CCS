@@ -780,7 +780,7 @@ button {
   ## 🎲 Random nummer var: $${\color{lightgreen}{42}}$$
 
 
-- Dette værktøj hjælper brugerne med at se og identificere de tal, de skal arbejde med, og understøtter dem i deres matematiske læring. 🎉
+- This tool helps users see and identify the numbers they need to work with and supports them in their mathematical learning. 🎉
 
 ---
 

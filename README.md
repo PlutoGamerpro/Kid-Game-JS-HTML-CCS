@@ -52,7 +52,7 @@
 
 4. [📊 Number summary](#-number-summary)  
 
-5. [More Resources & Tutorials](#more-resources--tutorials)
+5. [📚 More Resources & Tutorials](#-more-resources--tutorials)
 
 
   
@@ -782,7 +782,7 @@ button {
 
 ---
 
-## More Resources & Tutorials
+## 📚 More Resources & Tutorials
 
 Check out these amazing resources for more information and advanced coding skills: 📚
 

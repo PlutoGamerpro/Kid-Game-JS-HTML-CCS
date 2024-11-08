@@ -27,20 +27,20 @@
    - [1.12 Initializing the Game](#112-initializing-the-game) 
    - [1.13 Calling Methods in JS](#113-calling-methods-in-js)
 
-3. [Step-by-Step Breakdown of the HTML Code](#step-by-step-breakdown-of-the-html-code)
-   - [3.0 Body](#30-body)
-   - [3.1 Game Title](#31-game-title)
-   - [3.2 Highscore and Timer Display](#32-highscore-and-timer-display)
-   - [3.3 Difficulty Level Buttons](#33-difficulty-level-buttons)
-   - [3.4 Check Answer Button](#34-check-answer-button)
-   - [3.5 Dynamic Table Container](#35-dynamic-table-container)
-   - [3.6 Random Number Display](#36-random-number-display)
-   - [3.7 Answer Input Fields](#37-answer-input-fields)
-   - [3.8 Hidden Divs for Correct Answers](#38-hidden-divs-for-correct-answers)
-   - [3.9 Linking External JavaScript Files](#39-linking-external-javascript-files)
-   - [3.10 Generating a Random Number on Page Load](#310-generating-a-random-number-on-page-load)
+2. [Step-by-Step Breakdown of the HTML Code](#step-by-step-breakdown-of-the-html-code)
+   - [2.0 Body](#20-body)
+   - [2.1 Head Section](#21-head-section)
+   - [2.2 Game Title](#22-game-title)
+   - [2.3 Highscore and Timer Display](#23-highscore-and-timer-display)
+   - [2.4 Difficulty Level Buttons](#24-difficulty-level-buttons)
+   - [2.5 Check Answer Button](#25-check-answer-button)
+   - [2.6 Dynamic Table Container](#26-dynamic-table-container)
+   - [2.7 Random Number Display](#27-random-number-display)
+   - [2.8 Answer Input Fields](#28-answer-input-fields)
+   - [2.9 Hidden Divs for Correct Answers](#29-hidden-divs-for-correct-answers)
+   
 
-4. [CSS Code Explanation](#css-code-explanation)
+3. [CSS Code Explanation](#css-code-explanation)
    - [1. Resetting Default Styles](#1-resetting-default-styles)
    - [2. Body Styling](#2-body-styling)
    - [3. Heading Styling](#3-heading-styling)
@@ -424,11 +424,11 @@ updatePlaceholders();  // Set initial placeholders on page load
 
 ---
 
-
+## Step-by-Step Breakdown of the HTML Code
 
 ## 0. HTML Document Setup
 
-## 1. Body
+## 2.0 Body
 -  ```<!DOCTYPE html> ```: Declares the document type as HTML5, ensuring modern HTML syntax and behavior.
 -  ```<html lang="en"> ```: Defines the document language as English ( ```lang="en" ```), which helps with accessibility and search engine optimization.
 
@@ -438,7 +438,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 <!DOCTYPE html>
 <html lang="en">
  ```
-## 2. Head Section
+## 2.1 Head Section
 - The <head> section contains meta-information about the document, links to external resources, and sets up the document's character encoding and viewport.
   
     -  ``` <meta charset="UTF-8"> ```: Defines the character encoding as UTF-8 to support various characters and symbols.
@@ -456,21 +456,14 @@ updatePlaceholders();  // Set initial placeholders on page load
  ```
 --- 
 
-## Step-by-Step Breakdown of the HTML Code
-
-
-## 3.0 Body
-
-- The  ```<body> ``` section contains the visible content of the page. This is where most of the game’s interactive elements and displays are located
-
-# 3.1 Game Title
+# 2.2 Game Title
 -  ```<h1>Kid-Game</h1> ```: Displays the title of the game at the top of the page.
 
  ```html
 <h1>Kid-Game</h1>
  ```
 
-# 3.2 Highscore and Timer Display
+# 2.3 Highscore and Timer Display
 - ```<h1> Highscore: <a id="highscore"> 0 </a> </h1>```: Displays the current highscore, initially set to 0.
 
 - ```<h1> Time: <a id="Time"> 0 </a> </h1>```: Displays the remaining time for the game, also initially set to 0.
@@ -482,7 +475,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 <h1> Time:   <a id="Time">  0 </a>  </h1>
  ```
 
- # 3.3 Difficulty Level Buttons
+ # 2.4 Difficulty Level Buttons
  - A set of three buttons allowing the user to select the difficulty level (Easy, Medium, or Hard).
  -  ```<button id="easyButton" onclick="setLevel('easy')">Easy</button> ```: When the Easy button is clicked, the  ```setLevel('easy') ``` function is called, setting the game's difficulty level to "easy"
 
@@ -496,7 +489,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 </div>
  ```
 
-# 3.4 Check Answer Button
+# 2.5 Check Answer Button
 - ```<button id="checkanswer">Check Answer</button>```: This button is used to check if the player's input matches the correct answers. The actual check would happen in the JavaScript logic when the user clicks this button.
  ```html
 <div class="button-container">
@@ -504,7 +497,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 </div>
 
  ```
-# 3.5 Dynamic Table Container
+# 2.6 Dynamic Table Container
 - ```<div id="table-container"></div>```: This empty div will act as a container for any dynamic content or generated tables, likely used to display additional game-related data (like answers, scores, etc.).
  ```html
 <div class="containerTABLE">
@@ -514,7 +507,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 
  ```
 
-# 3.6 Random Number Display
+# 2.7 Random Number Display
 - ```<span id="randomNumber">0</span>```: Displays the random number generated for the game. This value will change based on the difficulty level and game logic, and will be displayed in a specific area on the page (inside a div with class ```number-box```)
  ```html
 <div class="container">
@@ -524,7 +517,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 </div>
  ```
 
-# 3.7 Answer Input Fields
+# 2.8 Answer Input Fields
 - There are four input fields where players can enter their answers based on the random number and difficulty level.
 - Input fields are labeled with placeholders like ```+10```, ```+1```, ```-10```, and ```-1```. These correspond to the different possible adjustments the user needs to make to the random number.
 - The fields are grouped within div elements with class names like ```top```, ```right```, ```bottom```, and ```left```, which will be used for styling.
@@ -543,7 +536,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 </div>
  ```
 
-# 3.8 Hidden Divs for Correct Answers 
+# 2.9 Hidden Divs for Correct Answers 
 - These ```<div>``` elements are hidden by default (```style="display:none;```") and are used to store the correct answers for comparison purposes.
 - These elements are likely manipulated by JavaScript to check if the player's input matches the correct answers.
  ```html
@@ -553,7 +546,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 <div id="TxtBox4_CorrectAnswer" style="display:none;"></div>
  ```
 
-# 3.9 Linking External JavaScript Files
+# 2.9 Linking External JavaScript Files
 - The page links to two external JavaScript files that contain the core game logic:
 - App.js: Handles the main game functions such as random number generation, timer, and checking answers.
 - TableGenerate.js: Likely generates and updates tables or additional dynamic content in the game.
@@ -563,7 +556,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 <script src="TableGenerate.js"></script>
 
 ```
-# 3.10 Generating a Random Number on Page Load
+# 2.10 Generating a Random Number on Page Load
 - The JavaScript function generateRandomNumber() is called as soon as the page loads to initialize the random number that will be displayed and used in the game.
 ```html
 <script>generateRandomNumber();</script>

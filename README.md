@@ -12,7 +12,7 @@
 ## Table of Contents
 
 1. [JavaScript Code Explanation 🖥️](#javascript-code-explanation)
-   - [🌐 1.0 Global Variables](#10-global-variables-#)
+   - [🌐 1.0 Global Variables](#10-global-variables-🌐)
    - [🔢 1.1 Generating a Random Number](#11-generating-a-random-number)
    - [🔄 1.2 Resetting Game Boxes and Feedback](#12-resetting-game-boxes-and-feedback)
    - [⏯️ 1.3 Enabling and Disabling the Check Answers Button](#13-enabling-and-disabling-the-check-answers-button) 

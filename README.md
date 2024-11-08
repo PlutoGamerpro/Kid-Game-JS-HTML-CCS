@@ -7,22 +7,27 @@
 
 # Kid-Game Documentation
 
+
+
 ## Table of Contents
-## Table of Contents
+
 1. [JavaScript Code Explanation](#javascript-code-explanation)
-   - [1. Generating Random Numbers](#1-generating-random-numbers)
+   - [0. Global Variables](#0-global-variables)
+   - [1. Generating a Random Number](#1-generating-a-random-number)
    - [2. Resetting Game Boxes and Feedback](#2-resetting-game-boxes-and-feedback)
-   - [3. Enabling and Disabling the Check Answers Button](#3-enabling-and-disabling-the-check-answers-button)
-   - [4. Checking if All Input Boxes are Filled](#4-checking-if-all-input-boxes-are-filled)
+   - [3. Enabling and Disabling the Check Answers Button](#3-enabling-and-disabling-the-check-answers-button) 
+   - [4. Checking if All Input Boxes are Filled](#4-checking-if-all-input-boxes-are-filled) 
    - [5. Highscore Management](#5-highscore-management)
    - [6. Finding Correct Answers](#6-finding-correct-answers)
    - [7. Resetting Timer](#7-resetting-timer)
-   - [8. Window onload Initialization](#8-window-onload-initialization)
-   - [9. Color Buttons Based on Difficulty](#9-color-buttons-based-on-difficulty)
+   - [8. Window onload Initialization](#8-windowonload)
+   - [9. Color Buttons Based on Difficulty](#9-colorbuttons)
    - [10. Checking User Answers](#10-checking-user-answers)
    - [11. Creating the Number Table](#11-creating-the-number-table)
    - [12. Initializing the Game](#12-initializing-the-game)
-2. [Step-by-Step Breakdown of the HTML Code](#step-by-step-breakdown-of-the-html-code)
+   - [13. Calling Methods in JS](#13-calling-methods-in-js)
+
+3. [Step-by-Step Breakdown of the HTML Code](#step-by-step-breakdown-of-the-html-code)
    - [3.0 Body](#30-body)
    - [3.1 Game Title](#31-game-title)
    - [3.2 Highscore and Timer Display](#32-highscore-and-timer-display)
@@ -34,7 +39,8 @@
    - [3.8 Hidden Divs for Correct Answers](#38-hidden-divs-for-correct-answers)
    - [3.9 Linking External JavaScript Files](#39-linking-external-javascript-files)
    - [3.10 Generating a Random Number on Page Load](#310-generating-a-random-number-on-page-load)
-3. [CSS Code Explanation](#css-code-explanation)
+
+4. [CSS Code Explanation](#css-code-explanation)
    - [1. Resetting Default Styles](#1-resetting-default-styles)
    - [2. Body Styling](#2-body-styling)
    - [3. Heading Styling](#3-heading-styling)
@@ -43,9 +49,12 @@
    - [6. Custom Input Box Positioning and Styling](#6-custom-input-box-positioning-and-styling)
    - [7. Highlighting Correct and Wrong Answers](#7-highlighting-correct-and-wrong-answers)
 
+5. [Conclusion](#conclusion)
+
+
   
     
-4. [Conclusion](#conclusion)
+
 
 
 
@@ -76,7 +85,7 @@
 
 ---
 
-## 0. Global Variables:
+## 0. Global Variables
  -  let randomNumber;: Holds the random number generated for the game.
 ```javascript
   let randomNumber;
@@ -127,28 +136,20 @@ function Reset_GameBoxes_And_More() {
 `
 ```
 - Purpose: This function clears all input fields and feedback messages, ensuring a clean state for the next round of guesses.
----
 
-## 3.  Enabling and Disabling the Check Answers Button
-```javascript
-function Reset_GameBoxes_And_More() {
-    for (let i = 1; i <= 4; i++) {
-        document.getElementById(`InputUser_TXT${i}`).value = ""; // Clears each input field
-        document.getElementById(`TxtBox${i}_CorrectAnswer`).textContent = ""; // Clears displayed correct answers
-        const parentBox = document.querySelectorAll('.input-box')[i - 1];
-        parentBox.classList.remove('correct', 'wrong'); // Removes visual feedback classes
-    }
-}
-```
-- Purpose: This function clears all input fields and feedback messages, ensuring a clean state for the next round of guesses.
-
--  🧼 ```Reset_GameBoxes_And_More()```:
+  -  🧼 ```Reset_GameBoxes_And_More()```:
    -  🧼 Clears the values of the input fields and any displayed correct answers.
    -  🧹 Removes any visual feedback (correct or wrong) from previous guesses to ensure a fresh start.
+---
+
+
+
+
+
 
 ---
 
-##  4. Enabling and Disabling the Check Answers Button
+##  3. Enabling and Disabling the Check Answers Button
  ```javascript 
 function EnableBTN() {
     const button = document.getElementById('checkanswer');
@@ -168,7 +169,7 @@ function DisableBTN() {
 
 ---
 
-##  5. Checking if All Input Boxes are Filled
+##  4. Checking if All Input Boxes are Filled
  ```javascript 
  function AllBoxesFilled() {
      const allFilled = [...Array(4).keys()].every(i => {
@@ -220,7 +221,7 @@ function DisableBTN() {
    - 🔒 DisableBTN(): Disables the button, preventing submission until all input fields are filled.
  
 ---
-## 6. HIGHSCORE
+## 5. highscore-management
  ```javascript 
  function HIGHSCORE(){
     console.log("OLD HIGHSCORE " + Highscore);
@@ -233,7 +234,7 @@ function DisableBTN() {
 
   ---
 
-## 7. FindCorrectAnswer
+## 6. Finding Correct Answers)
  ```javascript 
 function FindCorrectAnswer() {
      let correctAnswers = [];
@@ -267,7 +268,7 @@ function FindCorrectAnswer() {
 - Purpose: The  ```FindCorrectAnswer ``` function generates an array of possible correct answers based on the current difficulty level ( ```easy ```,  ```medium ```,  ```hard ```), adjusting a base number ( ```randomNumber ```) with different values for each level.
 
 ---
-## 8. ResetTimer
+## 7. Resetting Timer
 
  ```javascript 
 ' function resetTimer() {
@@ -296,7 +297,7 @@ function FindCorrectAnswer() {
 
 ---
 
-## 9. Window.onload
+## 8. Window.onload
 
  ```javascript 
 
@@ -309,7 +310,7 @@ function FindCorrectAnswer() {
 
 ---
 
-## 10. ColorButtons
+## 9. ColorButtons
  ```javascript 
  function ColorButtons(){
     var button = document.getElementById("hardButton");
@@ -326,7 +327,7 @@ button.classList.add("Easy")
 
 ---
 
-##  11. Checking User Answers
+##  10. Checking User Answers
  ```javascript
  document.getElementById("checkanswer").addEventListener("click", function () {
      const correctAnswers = FindCorrectAnswer(); // Get the correct answers for the current level
@@ -370,7 +371,7 @@ button.classList.add("Easy")
 
 ---
 
-##  12. Creating the Number Table
+##  11. Creating the Number Table
  ```javascript
 function createNumberTable(randomNumber) {
     const tableContainer = document.getElementById('table-container');
@@ -400,7 +401,7 @@ function createNumberTable(randomNumber) {
 
 ---
 
-## 13. Initializing the Game
+## 12. Initializing the Game
  ```javascript
 generateRandomNumber(); // Starts the game by generating a random number
 setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are filled
@@ -409,7 +410,7 @@ setInterval(AllBoxesFilled, 0); // Continuously checks if all input boxes are fi
 
 ---
 
-# 14. Calling Methods in js
+# 13. Calling Methods in js
  ```javascript
  generateRandomNumber();
 setInterval(AllBoxesFilled, 0);
@@ -540,7 +541,7 @@ updatePlaceholders();  // Set initial placeholders on page load
 </div>
  ```
 
-# 3.8  Hidden Divs for Correct Answers
+# 3.8 Hidden Divs for Correct Answers 
 - These ```<div>``` elements are hidden by default (```style="display:none;```") and are used to store the correct answers for comparison purposes.
 - These elements are likely manipulated by JavaScript to check if the player's input matches the correct answers.
  ```html
@@ -732,7 +733,7 @@ button {
 ---
 
 
-## 7.  Highlighting Correct and Wrong Answers
+## 7. Highlighting Correct and Wrong Answers
 ```css
 .correct {
     border: 6px solid greenyellow; // Green border for correct answers

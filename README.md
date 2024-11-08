@@ -41,13 +41,13 @@
    
 
 3. [CSS Code Explanation](#css-code-explanation)
-   - [1. Resetting Default Styles](#1-resetting-default-styles)
-   - [2. Body Styling](#2-body-styling)
-   - [3. Heading Styling](#3-heading-styling)
-   - [4. Table Styling](#4-table-styling)
-   - [5. Input Box and Button Styling](#5-input-box-and-button-styling)
-   - [6. Custom Input Box Positioning and Styling](#6-custom-input-box-positioning-and-styling)
-   - [7. Highlighting Correct and Wrong Answers](#7-highlighting-correct-and-wrong-answers)
+   - [3.0 Resetting Default Styles](#30-resetting-default-styles)
+   - [3.1 Body Styling](#31-body-styling)
+   - [3.2 Heading Styling](#32-heading-styling)
+   - [3.3 Table Styling](#33-table-styling)
+   - [3.4 Input Box and Button Styling](#34-input-box-and-button-styling)
+   - [3.5 Custom Input Box Positioning and Styling](#35-custom-input-box-positioning-and-styling)
+   - [3.6 Highlighting Correct and Wrong Answers](#36-highlighting-correct-and-wrong-answers)
 
 5. [More Resources & Tutorials](#more-resources--tutorials)
 

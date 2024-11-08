@@ -49,6 +49,9 @@
    - [3.5 Custom Input Box Positioning and Styling](#35-custom-input-box-positioning-and-styling)
    - [3.6 Highlighting Correct and Wrong Answers](#36-highlighting-correct-and-wrong-answers)
 
+
+4. [📊 Number summary](#-number-summary)  
+
 5. [More Resources & Tutorials](#more-resources--tutorials)
 
 
@@ -748,7 +751,7 @@ button {
 
 ---
 
-## 📊 Taloversigt
+## 📊 Number summary
 
 ## - 🎲  Random Number picked is: $${\color{lightgreen}{42}}$$
 

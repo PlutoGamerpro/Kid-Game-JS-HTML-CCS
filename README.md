@@ -49,7 +49,7 @@
    - [6. Custom Input Box Positioning and Styling](#6-custom-input-box-positioning-and-styling)
    - [7. Highlighting Correct and Wrong Answers](#7-highlighting-correct-and-wrong-answers)
 
-5. [Conclusion](#conclusion)
+5. [More Resources & Tutorials](#more-resources--tutorials)
 
 
   
@@ -784,9 +784,15 @@ button {
 
 ---
 
-## 🙌 Tak for din tid!
+## More Resources & Tutorials
 
-Jeg håber, du fandt denne gennemgang nyttig! Hvis du er interesseret i at se flere af mine projekter, kan du tjekke dem ud [here](https://github.com/PlutoGamerpro?tab=stars).
+Check out these amazing resources for more information and advanced coding skills: 📚
+
+If you're looking to deepen your understanding, here are some helpful resources you might find useful:
+
+- 🌟 [Official Visual Studio Documentation](https://docs.microsoft.com/en-us/visualstudio/)
+- 📚 [My Coding Tutorials on YouTube](https://www.youtube.com/@CodeByScript)
+- 🚀 [Explore My Projects Here!](https://github.com/PlutoGamerpro?tab=stars)  
 
 
 
